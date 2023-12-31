@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='../../assets/styles/default.css' rel='stylesheet' type='text/css' />
+    <link href='../../assets/styles/csis10a.css' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+<a href="../index.html">CSIS 10A Home</a>
+<h1>Week 2 - 02/11 and 02/13 - void Methods</h1>
+
+<blockquote>"“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” ~ Martin Fowler
+</blockquote>
+
+<article>
+    <header id="header" class="header">
+        <h2>Overview</h2>
+    </header><!-- /header -->
+    <section>
+        <table class="center">
+                <!-- caption>table title and/or explanatory text</caption -->
+                <thead>
+                    <tr>
+                        <th>Reading</th>
+                        <th>Lectures</th>
+                        <th>Labs</th>
+                        <th>Assignment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="http://greenteapress.com/thinkapjava/html/thinkjava005.html">Chapter 3</a></td>
+                        <td><a href="https://docs.google.com/presentation/d/1zr7aoCgG0RaB-SQX1mEW3xmFWZWa3tUaQMaYFS4xPRg/edit?usp=sharing">Lecture 3</a></td>
+                        <td><a href="https://docs.google.com/document/d/1kEdAZJ8dpgWWPugMZNe3nWL4rVJ4PBZVDbVjgNaV6IM/edit?usp=sharing">Labs 3</a><br><a href="lab03.zip">lab03.zip</a> (for BlueJ)<br><a href="lab03mvn.zip">lab03mvn.zip</a> (Maven version of Lab 3 - you can choose lab03.zip <b>or</b> lab03mvn.zip, but don't do both!)</td>
+                        <td><a href="https://docs.google.com/document/d/1au-zZ2ulPjEon0nvCmIWbLmXTp2Ozy23xFDWM4KlstE/edit?usp=sharing">Assignment 3</a><br>
+                        <a href="assignment03.zip">assignment03.zip</a></td>
+                    </tr>
+                </tbody>
+            </table>    
+    </section>
+</article>
+
+<article>
+    <header id="header" class="header">
+        <h2>Developer Tool of the Week</h2>
+        <h3><a href="http://maven.apache.org/">maven</a></h3>
+    </header><!-- /header -->
+    <section>
+    <p>Maven is a build automation tool. It allows you to quickly create a project with a standard layout and focus on coding. Build automation tools handle the details of compiling, running unit tests, packing and installing software. There are a number of build tools that you can use for Java projects; some examples include: <a href="http://maven.apache.org/">Maven</a>, <a href="http://ant.apache.org/">Ant</a>, <a href="http://www.gnu.org/software/make/">Make</a>, and <a href="http://www.gradle.org/">Gradle</a>. For Java, Maven is probably the tool you will encounter the most often in open source and enterprise projects. Most IDEs support opening Maven projects with little to no hassles too.</p>
+    </section>
+
+    <section>
+        <h3>Quickstart</h3>
+        Like javac (from last week), Maven is a command line tool that is run from a terminal or command window. As it is a java program, the same maven download will run on basically any desktop operating system.
+        <ol>
+            <li>Installation<br><br>Installing Maven on Windows is relatively straightforward. Basically, you'll download maven, extract the archive file (zip, gz), and add the extracted directory to the PATH environment variable. More detailed instructions are at <a href="http://maven.apache.org/download.cgi#Installation">http://maven.apache.org/download.cgi#Installation</a><br><br>
+
+            On Mac OS X, I would recommend installing maven using <a href="http://brew.sh/">homebrew</a>. Once homebrew is installed you can install maven in a terminal using <span class="code">brew install maven</span>.
+            </li>
+            <li>Create a project<br><br>In a terminal run <span class="code">mvn archetype:generate</span>. This will allow you to interactively create a project. When giving a choice, accept the default. For groupId enter <b>csis10a</b>, for packageId enter <b>testprj</b> (with no spaces or hyphens).<br><br>
+
+            This will create a directory named 'testprj'. Inside that directory will be two things: a file named <i>pom.xml</i> and a directory named <i>src</i>. The source directory contains all the code. By default, it contains some simple placeholder code.
+            </li>
+
+            <li>Build the Project<br><br>To build the project, run it's unit tests (which will cover in the future), and package the compiled code, run the following in a terminal: <span class="code">mvn package</span>.<br><br>
+
+            After running the package command there will be a new directory under 'testprj' named <i>target</i> which contains all the build products. You can delete this directory at any time or run <span class="code">mvn clean</span> and maven will do it for you.
+            </li>
+
+            <li>Running a Project<br><br>Maven provides tools for running any piece of code in your project with a main method. In our test project, you can run the default class using <span class="code">mvn exec:java -Dexec.mainClass=csis10a.App</span>.</li>
+
+            <li>Much, Much More<br><br>This is just the tip of the iceberg. Maven supports much, much more, such as dependency management, project interogation, site generation, cross-language compilation, multi-module projects, etc.</li>
+        </ol>    
+    </section>
+
+    <h3>References</h3>
+    <section>
+        <ul>
+            <li><a href="http://maven.apache.org/guides/getting-started/">Getting Started with Maven</li>
+            <li><a href="https://www.youtube.com/watch?feature=player_embedded&v=72vejAmaypM">Getting Started Video</a></li>
+
+        </ul>
+    </section>
+</article>
+
+
+<footer>
+         <div id="disqus_thread"></div>
+         <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'hohonuuli-csis10a'; // required: replace example with your forum shortname
+        var disqus_identifier = 'ch03_index';
+        var disqus_title = 'CSIS10A Class';
+        var disqus_url = 'http://hohonuuli.bitbucket.org/csis10a/index.html';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+    </footer>
+</body>
+</html>
