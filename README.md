@@ -20,6 +20,7 @@
 ### Tasks
 
 - Read [Chapter 3](http://greenteapress.com/thinkapjava/html/thinkjava005.html)
+- [Assignment 3](https://classroom.github.com/a/fvVgBLCi)
 
 ## Developer tool of the week 
 
