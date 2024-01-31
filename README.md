@@ -6,13 +6,13 @@
 
 - [Survey]()
 - [Lecture 3](https://docs.google.com/presentation/d/1zr7aoCgG0RaB-SQX1mEW3xmFWZWa3tUaQMaYFS4xPRg/edit?usp=sharing)
-- [Lab 3 part A](https://classroom.github.com/a/Gc3m1-ui)
+- [Lab 3 part A](https://github.com/mpc-csis/csis10a-week-02)
 
 
 ## Day 4
 
 - [Lecture 3](https://docs.google.com/presentation/d/1zr7aoCgG0RaB-SQX1mEW3xmFWZWa3tUaQMaYFS4xPRg/edit?usp=sharing)
-- [Lab 3 part B](https://classroom.github.com/a/Gc3m1-ui)
+- [Lab 3 part B](https://github.com/mpc-csis/csis10a-week-02)
 
 
 ## Assignment 
